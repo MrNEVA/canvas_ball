@@ -42,11 +42,12 @@ class Circle extends React.Component {
     this.y += this.dy
     const ctx = this.context
     ctx.beginPath()
+    ctx.globalCompositeOperation = "difference"
     ctx.save()
     ctx.fillStyle = this.color
     ctx.arc(this.x, this.y, this.radius, this.start, this.end, this.clockwise)
     ctx.fill()
-    ctx.stroke() 
+    //ctx.stroke() 
     ctx.restore()
     ctx.closePath()
     return this

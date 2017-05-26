@@ -27,7 +27,7 @@ class Canvas extends React.Component {
        '#D96666',
     ]
    
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 200; i++) {
        const radius = randomIntFromRange(4, 30)
       const bola_props = {
       dx: randomIntFromRange(-2, 2),
